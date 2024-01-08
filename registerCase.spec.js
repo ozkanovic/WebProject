@@ -18,12 +18,12 @@ describe('Default Suite', function() {
     await driver.manage().window().setRect({ width: 699, height: 543 });
 
     await driver.findElement(By.css(".navbar-toggler")).click();
-    await driver.sleep(1000); // Sayfa geçişini beklemek için 1 saniye bekleme ekledim
+    await driver.sleep(2000); // Sayfa geçişini beklemek için 2 saniye bekleme ekledim
 
     const menuIcon = await driver.findElement(By.css(".icon-bar:nth-child(3)"));
     await driver.actions({ bridge: true }).moveToElement(menuIcon).perform();
 
-    await driver.sleep(1000); // Sayfa geçişini beklemek için 1 saniye bekleme ekledim
+    await driver.sleep(2000); // Sayfa geçişini beklemek için 2 saniye bekleme ekledim
 
     await driver.findElement(By.css(".nav-link:nth-child(3) > .text-nowrap")).click();
 
