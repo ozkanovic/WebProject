@@ -26,7 +26,7 @@ describe('register', function() {
     
     await driver.sleep(5000);
 
-  
+    //Dopinger ana sayfasına yönlendikten sonraki kayıt olma senaryoları:
     await driver.findElement(By.css(".nav-link:nth-child(3) > .text-nowrap")).click();
     await driver.findElement(By.id("mat-input-0")).click();
     await driver.findElement(By.id("mat-input-0")).sendKeys("legolasS");
