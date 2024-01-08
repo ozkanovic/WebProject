@@ -1,0 +1,9 @@
+{
+    "name": "dopinger-registration-scenario",
+    "private":"true",
+    "devDependencies": {
+        "chromedriver": "120.0.1",
+        "mocha": "10.2.0",
+        "selenium-webdriver": "4.16.0"
+    }
+}
